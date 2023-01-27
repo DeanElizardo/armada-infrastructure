@@ -1,6 +1,7 @@
 import { ArmadaRootStackProps } from "./root.stack";
 
 export const validateEnvVars = (props: ArmadaRootStackProps) => {
+  // console.log(props)
   if (!props?.accessKeyId) {
     throw new Error(
       'Please set your access key in the environmental variables using: AWS_ACCESS_KEY_ID.'
